@@ -1,21 +1,28 @@
+/* used W3schools website to get the background image to work */
 body {
-    background-color: yellow;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* searched google for the pokemon background img */
+    background: url("https://img.freepik.com/free-photo/painting-mountain-landscape-with-road-leading-it_1340-29995.jpg?size=626&ext=jpg&ga=GA1.1.2119426238.1697585888&semt=ais");
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
     text-align: center;
+    color: black;
 }
 
+/* used W3Schools to remember how to create board box */
 .board-game {
-    height: 600px;
+    height: 500px;
     width: 500px;
     margin: 0 auto;
+    background-color: grey;
+    border: 10px outset pink;
     display: flex;
     flex-wrap: wrap;
-    background-color: green;
-    border: 5px solid black;
 }
 
 .card {
-    height: 128px;
-    width: 90px;
-    margin: 2.5px;
+    height: 100px;
+    width: 100px;
+    margin: 2px;
 }
