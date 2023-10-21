@@ -1,29 +1,79 @@
+const cardBoard = document.querySelector(".cards");
+const cardType = ["red","orange","yellow","green","blue","purple","lime","gold","pink","aqua"];
+const cardSet = cardType.concat(cardType);
+const randomCard = cardSet.length;
 
-// need to create variables for the cards and  playing board
-let errors = 0
-let cardType = ["Ivysaur", "Eevee", "Pachirisu", "Pikachu", "Totodile", "Squirtle", "Marill", "Phanpy", "Pipiup", "Skitty"]
-let board = [];
-let playingCards;
-// let rows = 5;
-// let columns = 4;
+let visibleCards = 0;
+let activeCard = null;
+let awaitingEndOfMove = false;
+let attempts = 0;
+let currentAttempts =document.getElementById("attempts");
+// attempts++;
+// currentAttempts.innerText = attempts;
 
-// let cardChoice1;
-// let cardChoice2;
+function createCard(randomCard) {
+    const card = document.createElement("div");
 
-// use windows.onload to get the image on the page
-window.onload = function() {
-    shuffleDeck();
-    startGame();
+    card.classList.add("card");
+    card.setAttribute("data-cardType", randomCard);
+    card.setAttribute("data-revealed", "false");
+
+    card.addEventListener("click", () => {
+        const cardRevealed = card.getAttribute("data-revealed");
+
+        if (awaitingEndOfMove || cardRevealed === "true" || card == activeCard) {
+            return;
+        }
+
+        card.style.backgroundColor = randomCard;
+
+        if (!activeCard) {
+            activeCard = card;
+
+            return;
+        }
+
+        const cardToMatch = activeCard.getAttribute("data-cardType");
+
+        if (cardToMatch === randomCard) {
+            activeCard.setAttribute("data-cardType", "true");
+            card.setAttribute("data-revealed", "true");
+
+            activeCard = null;
+            awaitingEndOfMove = false;
+            visibleCards += 2;
+
+            // if (visibleCards === randomCard) {
+            //     alert ("Congrats! Play Again");
+            // }
+            return;
+        }
+        awaitingEndOfMove = true;
+            
+        setTimeout(() => {
+            card.style.backgroundColor = null;
+            activeCard.style.backgroundColor = null;
+        
+            awaitingEndOfMove = false;
+            activeCard = null;
+        }, 1000);
+        attempts++;
+        currentAttempts.innerText = attempts;
+    });
+
+    return card;
 }
 
-function shuffleDeck() {  
-// 2 of each kind of card is needed to play the game. concat will create a copy of the array
-    playingCards = cardType.concat(cardType);
-    // console.log(playingCards) the concat worked I now have 2 sets of cards
+for (let i = 0; i < randomCard; i++) {
+    const randomIndex = Math.floor(Math.random() * cardSet.length);
+    const randomCard = cardSet[randomIndex];
+    const card = createCard(randomCard);
+
+    cardSet.splice(randomIndex, 1);
+    cardBoard.appendChild(card);
+
+    console.log(randomCard);
 }
-// need to find a way to have the cards shuffle each time the game starts. 
 
-
-// now I need to get the board arranged
 
 
