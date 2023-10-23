@@ -52,24 +52,30 @@ h2 {
 .card {
     height: 100px;
     background: black;
-    border: 5px solid fuchsia;
+    border: 7px inset fuchsia;
     cursor: pointer;
 }
 
 #startButton {
     margin: 0 auto;
-    height: 50px;
-    width: 150px;
+    height: 75px;
+    width: 200px;
     background: fuchsia;
-    border: 5px groove black;
-    color: black;
+    border: 12px groove black;
+    color: limegreen;
     cursor: pointer;
+    font-size: 1.5em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 
 h3 {
     color: yellow;
+    font-size: 2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
     margin: 0, auto;
+    text-shadow: 5px 8px 4px fuchsia;
 }
 
 
