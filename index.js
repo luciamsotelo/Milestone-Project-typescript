@@ -16,9 +16,7 @@ let attempts = 0;
 let timer;
 let seconds = 0;
 
-
-startButton.addEventListener("click", startGame);
-
+// got the timer function from watching the youTube channel Web Dev Simplified
 function startTimer() {
     timer = setInterval(updateTimer, 1000);
 }
@@ -30,8 +28,9 @@ function updateTimer() {
     timerDisplay.innerText = `${minutes}:${remainingSeconds}`;
 }
 
-function startGame(){ 
+startButton.addEventListener("click", startGame);
 
+function startGame(){ 
     gameBoard.innerHTML="";
     startTimer();
     // this makes the cards randomly appear
@@ -108,6 +107,7 @@ card.addEventListener("click", () => {
 
     return card;
 }
+
 
 
 

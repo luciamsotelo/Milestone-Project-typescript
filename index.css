@@ -9,6 +9,37 @@ body {
     text-align: center;
     color: black;
 }
+h1 {
+    color:fuchsia;
+    font-size: 4em;
+    margin: 15px auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h2 {
+    color:green;
+    font-size: 1.75em;
+    margin: 4px auto;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.gameInfo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0, auto;
+    padding: 0px;
+}
+
+.stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0, auto;
+    padding: 0, auto;
+}
 
 .cards {
     margin:40px auto;
@@ -35,7 +66,10 @@ body {
     cursor: pointer;
 }
 
+
 h3 {
     color: yellow;
-    margin: 50px;
+    margin: 0, auto;
 }
+
+
