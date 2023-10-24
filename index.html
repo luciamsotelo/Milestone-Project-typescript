@@ -1,33 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Memory Game</title>
-    <link rel="stylesheet" href="index.css">
-    <script src="index.js" defer></script>
-    <!-- <script src="assets/images"></script> -->
-</head>
-<body>
-    <h1 class = 'title'>Memory Game</h1>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Memory Game</title>
+        <link rel="stylesheet" href="index.css" />
+        <script src="index.js" defer></script>
+        <!-- <script src="assets/images"></script> -->
+    </head>
+    <body>
+        <h1 class="title">Memory Game</h1>
 
-    <!-- <div id="message" class="msg"><p class="messageText"></p></div> -->
-        
-    <div class = gameInfo>
-        <h2>Moves:   <span id = "attempts">0</span></h2>
-        <h2>Time:<span id = "timer">  00:00</span></h2>
-    </div>
-    
+        <!-- have a message saying you made it. set the div visiability to false-->
+        <div id="message" hidden><p>"Congratulations You Did It"!<br>Click Start Game Button to Play Again!</p></div>
 
-    <div class = "stats">
-        <div class = "cards"></div>
-        <div class = "gameBoard"></div>
-    </div>
-    
+        <div class="gameInfo">
+            <h2>Moves: <span id="attempts">0</span></h2>
+            <h2>Time:<span id="timer"> 00:00</span></h2>
+        </div>
 
-    <button id="startButton">Start Game</button>
-    
-    <h3>Match the Colors and Win!</h3>
+        <div class="stats">
+            <div class="cards"></div>
+            <div class="gameBoard"></div>
+        </div>
 
-</body>
+        <button id="startButton">Start Game</button>
+
+        <h3>Match the Colors and Win!</h3>
+    </body>
 </html>

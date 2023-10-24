@@ -16,6 +16,17 @@ h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+p {
+    color: fuchsia;
+    font-size: 4em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 3px;
+    padding: 40px;
+    border: 10px solid limegreen;
+    text-shadow: 5px 8px 4px limegreen;
+}
+
+
 h2 {
     color:green;
     font-size: 1.75em;
@@ -30,7 +41,7 @@ h2 {
     flex-wrap: wrap;
     justify-content: center;
     margin: 0, auto;
-    padding: 0px;
+    padding: 40px;
 }
 
 .stats {
@@ -57,6 +68,7 @@ h2 {
 }
 
 #startButton {
+    transform: scale();
     margin: 0 auto;
     height: 75px;
     width: 200px;
@@ -77,5 +89,7 @@ h3 {
     margin: 0, auto;
     text-shadow: 5px 8px 4px fuchsia;
 }
+
+
 
 
