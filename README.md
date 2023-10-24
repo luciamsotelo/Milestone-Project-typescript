@@ -1,5 +1,6 @@
 # Milestone-Project-1
-
+Deployment
+  The web game is deployed at: https://luciamsotelo.github.io/Milestone-Project-1/
 Memory Match Game
   - match card of the same color
   
