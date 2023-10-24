@@ -12,6 +12,7 @@ const cardType = [
     "deeppink",
     "aqua",
 ];
+
 let cardSet = cardType.concat(cardType);
 const cardSetLength = cardSet.length;
 const gameBoard = document.querySelector(".cards");
