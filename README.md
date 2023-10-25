@@ -1,5 +1,6 @@
 # Milestone-Project-1
-
+Deployment
+  The web game is deployed at: https://luciamsotelo.github.io/Milestone-Project-1/
 Memory Match Game
   - match card of the same color
   
@@ -32,6 +33,7 @@ contributors: Web Dev Simplified a youTube Channel: i used the code he had for m
 contributors: Watched Kevin Yip a youTube channel for inspiration
 contributor: Watched Dom a youTube channel for inspiration and help with some codes "Learn the JavaScript DOM with this project-Memory game
 contributor: Will (from class) we bounced ideas off of each other
-contributor: Brandon helped me get started with the start button and hopefully can get more help from him
+contributor: Brandon helped me get started with the start button and also fixed my message pop up
+contributor: Hadeel helped me with getting my start button to work 
 
 

@@ -20,13 +20,14 @@ const startButton = document.getElementById("startButton");
 const currentAttempts = document.getElementById("attempts");
 const messageDiv = document.getElementById("message");
 
+
 // variables needed
 let visibleCards = 0;
 let activeCard = null;
 let activeCardColor = null;
 let awaitingEndOfMove = false;
 let attempts = 0;
-let timer;
+let timer = null;
 let seconds = 0;
 
 // got the timer function from watching the youTube channel Web Dev Simplified
@@ -44,9 +45,12 @@ function updateTimer() {
 }
 
 startButton.addEventListener("click", startGame);
+startButton.addEventListener("click", hideMessage);
+
 
 function startGame() {
     gameBoard.innerHTML = "";
+    
     //visiability for the message div set to false
     // this makes the cards randomly appear
     for (let i = 0; i < cardSetLength; i++) {
@@ -65,7 +69,14 @@ function startGame() {
     stopTimer(timer);
     console.log(timer);
     startTimer();
+    
 }
+function hideMessage() {
+    messageDiv.setAttribute("hidden", true);
+    
+}
+    
+
 
 function checkGameOver() {
     if (visibleCards === cardSetLength) {
@@ -126,8 +137,8 @@ function cardHandler(event) {
 
         return;
     }
-    //     return;
-    // }
+    
+
     awaitingEndOfMove = true;
 
     setTimeout(() => {
@@ -136,7 +147,7 @@ function cardHandler(event) {
 
         awaitingEndOfMove = false;
         activeCard = null;
-        //updateAttempts();
+        updateAttempts();
     }, 250);
     attempts++;
     currentAttempts.innerText = attempts;

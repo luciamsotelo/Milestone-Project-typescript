@@ -17,6 +17,7 @@ h1 {
 }
 
 p {
+    background-color: yellow;
     color: fuchsia;
     font-size: 4em;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -24,8 +25,13 @@ p {
     padding: 40px;
     border: 10px solid limegreen;
     text-shadow: 5px 8px 4px limegreen;
+    view-transition-name: background-color 5s, color 3s;
 }
-
+/* .message:view-transition {
+    transition-delay: 5s;
+    background-color: limegreen;
+    color: red ;
+} */
 
 h2 {
     color:yellow;
@@ -93,6 +99,9 @@ h3 {
     margin: 0, auto;
     text-shadow: 5px 8px 4px fuchsia;
 }
+
+
+
 
 
 
