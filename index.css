@@ -23,7 +23,7 @@ p {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 3px;
     padding: 40px;
-    border: 25px solid  limegreen;
+    border: 50px solid  limegreen;
     text-shadow: 5px 8px 4px limegreen; 
 
 }
@@ -35,7 +35,7 @@ p:hover {
     background-image: linear-gradient(to right,yellow, green, blue, purple, grey, deeppink, aqua);
     margin: 3px;
     padding: 40px;
-    border: 10px solid  black;
+    border: 20px solid  black;
     text-shadow: 5px 80px 20px black;
 }
 
