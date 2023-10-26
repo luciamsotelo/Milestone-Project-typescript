@@ -45,13 +45,12 @@ function updateTimer() {
 }
 
 startButton.addEventListener("click", startGame);
-startButton.addEventListener("click", hideMessage);
-
 
 function startGame() {
+    // messageDiv.textContent ="";
     gameBoard.innerHTML = "";
-    
     //visiability for the message div set to false
+    
     // this makes the cards randomly appear
     for (let i = 0; i < cardSetLength; i++) {
         const randomIndex = Math.floor(Math.random() * cardSet.length);
@@ -69,15 +68,9 @@ function startGame() {
     stopTimer(timer);
     console.log(timer);
     startTimer();
-    
-}
-function hideMessage() {
-    messageDiv.setAttribute("hidden", true);
-    
+
 }
     
-
-
 function checkGameOver() {
     if (visibleCards === cardSetLength) {
         stopTimer();
@@ -88,6 +81,7 @@ function checkGameOver() {
         showMessage();
     }
 }
+
 function stopTimer() {
     clearInterval(timer);
     seconds = 0;
