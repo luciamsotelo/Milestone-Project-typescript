@@ -80,7 +80,7 @@ h2 {
 }
 
 Button {
-    margin: 50px auto;
+    margin: 40px 1px 1px 30px;
     height: 75px;
     width: 200px;
     background: fuchsia;
@@ -92,8 +92,10 @@ Button {
 }
 
 #startButton:hover {
+    height: 85px;
+    width: 210px;
     background-color: limegreen;
-    border: 12px groove black;
+    border: 8px solid black;
     color: fuchsia;
     transition: 1s;
 }
@@ -104,7 +106,8 @@ h3 {
     font-size: 2em;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: lighter;
-    margin: 0, auto;
+    margin: 0 auto;
+    padding: 1px;
     text-shadow: 5px 8px 4px fuchsia;
 }
 
