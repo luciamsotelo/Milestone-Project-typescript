@@ -47,7 +47,7 @@ function updateTimer() {
 startButton.addEventListener("click", startGame);
 
 function startGame() {
-    // messageDiv.textContent ="";
+    messageDiv.setAttribute('hidden', 'hidden');
     gameBoard.innerHTML = "";
     //visiability for the message div set to false
     
