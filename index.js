@@ -46,9 +46,10 @@ function updateTimer() {
 
 startButton.addEventListener("click", startGame);
 
+
 function startGame() {
-    // messageDiv.textContent ="";
-    gameBoard.innerHTML = "";
+    messageDiv.setAttribute('hidden', 'hidden');
+    gameBoard.innerHTML = ""; 
     //visiability for the message div set to false
     
     // this makes the cards randomly appear
@@ -60,7 +61,7 @@ function startGame() {
 
         cardSet.splice(randomIndex, 1);
         gameBoard.appendChild(card);
-        card.addEventListener("click", cardHandler);
+        card.addEventListener("click", cardHandler); 
     }
     cardSet = cardType.concat(cardType);
     attempts = 0;
@@ -76,7 +77,7 @@ function checkGameOver() {
         stopTimer();
         //visiability for the message div set to true
         function showMessage() {
-            messageDiv.removeAttribute("hidden");
+            messageDiv.removeAttribute("hidden"); 
         }
         showMessage();
     }
@@ -86,7 +87,7 @@ function stopTimer() {
     clearInterval(timer);
     seconds = 0;
     const timerDisplay = document.getElementById("timer");
-    timerDisplay.innerText = "";
+    timerDisplay.innerText = "";  
 }
 
 // this is where the cards are being revealed and hidden used youtube video for inspiration learn the javascript DOM with this project
@@ -131,9 +132,9 @@ function cardHandler(event) {
 
         return;
     }
-    
 
     awaitingEndOfMove = true;
+    
 
     setTimeout(() => {
         card.style.backgroundColor = null;
@@ -146,5 +147,6 @@ function cardHandler(event) {
     attempts++;
     currentAttempts.innerText = attempts;
 }
+
 
 // watched the video on YouTube learn the JavaScript DOM with this project for inspiration and when i couldn't get my pokemon pictures to work i went with the colors and got the idea from this video.
