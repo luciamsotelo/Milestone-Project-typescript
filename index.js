@@ -49,7 +49,11 @@ startButton.addEventListener("click", startGame);
 
 function startGame() {
     messageDiv.setAttribute('hidden', 'hidden');
+<<<<<<< HEAD
     gameBoard.innerHTML = ""; 
+=======
+    gameBoard.innerHTML = "";
+>>>>>>> 1d42ff14fe016dc3ed35a06dd5c20db5e31f001b
     //visiability for the message div set to false
     
     // this makes the cards randomly appear
