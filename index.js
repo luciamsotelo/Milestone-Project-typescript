@@ -1,3 +1,4 @@
+// folder index.js
 // here are all of my constants, could not get the images
 
 const cardType = [
@@ -49,12 +50,12 @@ startButton.addEventListener("click", startGame);
 
 function startGame() {
     messageDiv.setAttribute('hidden', 'hidden');
-<<<<<<< HEAD
-    gameBoard.innerHTML = ""; 
-=======
+// HEAD
+    // gameBoard.innerHTML = ""; 
+
     gameBoard.innerHTML = "";
->>>>>>> 1d42ff14fe016dc3ed35a06dd5c20db5e31f001b
-    //visiability for the message div set to false
+// d42ff14fe016dc3ed35a06dd5c20db5e31f001b
+    //visibility for the message div set to false
     
     // this makes the cards randomly appear
     for (let i = 0; i < cardSetLength; i++) {
@@ -79,7 +80,7 @@ function startGame() {
 function checkGameOver() {
     if (visibleCards === cardSetLength) {
         stopTimer();
-        //visiability for the message div set to true
+        //visibility for the message div set to true
         function showMessage() {
             messageDiv.removeAttribute("hidden"); 
         }

@@ -1,33 +1,45 @@
+<!-- index.html folder -->
+
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Memory Game</title>
-        <link rel="stylesheet" href="index.css" />
-        <script src="index.js" defer></script>
-        <!-- <script src="assets/images"></script> -->
-    </head>
-    <body>
-        <h1 class="title">Memory Game</h1>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Play the Memory Game - a fun and challenging game to test your memory skills. Match colors and win!">
+    <meta name="keywords" content="Memory Game, Colors, Matching Game, Memory Skills, Fun Game">
+    <meta name="author" content="Your Name">
 
-        <!-- have a message saying you made it. set the div visiability to false-->
-        <div id="message" hidden><p>"Congratulations You Did It"!<br>Click Start Game Button to Play Again!</p></div>
+    <!-- Add Open Graph meta tags for better social media sharing -->
+    <meta property="og:title" content="Memory Game">
+    <meta property="og:description" content="Play the Memory Game - a fun and challenging game to test your memory skills. Match colors and win!">
+    <meta property="og:image" content="url_to_image.jpg">
+    <meta property="og:url" content="your_website_url">
 
-        <div class="gameInfo">
-            <h2>Moves: <span id="attempts">0</span></h2>
-            <h2>Time:<span id="timer"> 00:00</span></h2>
-        </div>
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+    <!-- <script src="assets/images"></script> -->
+</head>
+<body>
+    <h1 class="title">Memory Game</h1>
 
-        <div class="stats">
-            <div class="cards"></div>
-            <div class="gameBoard"></div>
-        </div>
+    <!-- have a message saying you made it. set the div visibility to false-->
+    <div id="message" hidden><p>"Congratulations You Did It"!<br>Click Start Game Button to Play Again!</p></div>
 
-        <button id="startButton">Start Game</button>
-        <!-- <button class="transform">Ready to</button> -->
+    <div class="gameInfo">
+        <h2>Moves: <span id="attempts">0</span></h2>
+        <h2>Time:<span id="timer"> 00:00</span></h2>
+    </div>
 
-        <h3>Match the Colors and Win!</h3>
+    <div class="stats">
+        <div class="cards"></div>
+        <div class="gameBoard"></div>
+    </div>
 
-    </body>
+    <button id="startButton">Start Game</button>
+    <!-- <button class="transform">Ready to</button> -->
+
+    <h3>Match the Colors and Win!</h3>
+</body>
 </html>
+
