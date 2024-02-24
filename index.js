@@ -80,13 +80,19 @@ function startGame() {
 function checkGameOver() {
     if (visibleCards === cardSetLength) {
         stopTimer();
-        //visibility for the message div set to true
+        // Visibility for the message div set to true
         function showMessage() {
-            messageDiv.removeAttribute("hidden"); 
+            messageDiv.removeAttribute("hidden");
         }
         showMessage();
+
+        // Refresh the page after a delay (e.g., 3 seconds)
+        setTimeout(() => {
+            location.reload();
+        }, 5000); // Adjust the delay as needed
     }
 }
+
 
 function stopTimer() {
     clearInterval(timer);
