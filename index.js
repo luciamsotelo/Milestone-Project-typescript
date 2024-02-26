@@ -89,7 +89,7 @@ function checkGameOver() {
         // Refresh the page after a delay (e.g., 3 seconds)
         setTimeout(() => {
             location.reload();
-        }, 5000); // Adjust the delay as needed
+        }, 6000); // Adjust the delay as needed
     }
 }
 
