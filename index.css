@@ -161,19 +161,19 @@ body {
 
     Button {
         margin: 10px 1px 1px 10px;
-        height: 60px;
+        height: 70px;
         width: 120px;
         background: fuchsia;
         border: 10px groove black;
         color: limegreen;
         cursor: pointer;
-        font-size: 1.25em;
+        font-size: 1.20em;
         font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     }
 
     #startButton:hover {
-        height: 70px;
-        width: 120px;
+        height: 75px;
+        width: 125px;
         background-color: limegreen;
         border: 8px solid black;
         color: fuchsia;
