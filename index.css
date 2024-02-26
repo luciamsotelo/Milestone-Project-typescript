@@ -91,14 +91,14 @@ body {
 }
 
     Button {
-        margin: 40px 1px 1px 30px;
-        height: 75px;
-        width: 200px;
+        margin: 10px 1px 1px 10px;
+        height: 70px;
+        width: 120px;
         background: fuchsia;
-        border: 15px groove black;
+        border: 10px groove black;
         color: limegreen;
         cursor: pointer;
-        font-size: 1.5em;
+        font-size: 1.20em;
         font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     }
 
@@ -112,13 +112,13 @@ body {
     }
 
     h3 {
-        color: yellow;
-        font-size: 2em;
+        color: black;
+        font-size: 1.75em;
         font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
         font-weight: lighter;
         margin: 0 auto;
-        padding: 1px;
-        text-shadow: 5px 8px 4px fuchsia;
+        padding: 15px;
+        text-shadow: 5px 5px 6px fuchsia;
     }
 
 
