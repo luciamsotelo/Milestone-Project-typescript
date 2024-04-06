@@ -45,10 +45,38 @@ button:hover {
     font-size: 3em;
     margin: 5px auto;
   }
+  .cards {
+    margin: 1px auto;
+    width: -moz-max-content;
+    width: max-content;
+    display: grid;
+    grid-template-columns: repeat(4, 75px);
+    gap: 0.25em;
+  }
+  .card {
+    height: 65px;
+    background: black;
+    border: 5px inset fuchsia;
+    cursor: pointer;
+  }
 }
 @media (min-width: 1024px) {
   body {
     background: url("https://i.pinimg.com/736x/69/68/1e/69681ef4639fa37d34c05f824a597cb3.jpg") repeat;
     background-size: cover;
+  }
+  .cards {
+    margin: 1px auto;
+    width: -moz-max-content;
+    width: max-content;
+    display: grid;
+    grid-template-columns: repeat(5, 75px);
+    gap: 0.25em;
+  }
+  .card {
+    height: 100px;
+    background: black;
+    border: 5px inset fuchsia;
+    cursor: pointer;
   }
 }/*# sourceMappingURL=index.css.map */

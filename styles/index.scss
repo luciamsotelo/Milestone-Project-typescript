@@ -70,7 +70,20 @@ button {
     margin: 5px auto;
   }
   
-  // More styles...
+  .cards {
+    margin: 1px auto;
+    width: max-content;
+    display: grid;
+    grid-template-columns: repeat(4, 75px);
+    gap: .25em;
+}
+
+.card {
+    height: 65px;
+    background: black;
+    border: 5px inset fuchsia;
+    cursor: pointer;
+}
 }
 
 @media (min-width: 1024px) {
@@ -79,5 +92,18 @@ button {
     background-size: cover;
   }
   
-  // Additional styles for larger screens...
+  .cards {
+    margin: 1px auto;
+    width: max-content;
+    display: grid;
+    grid-template-columns: repeat(5, 75px);
+    gap: .25em;
+}
+
+.card {
+    height: 100px;
+    background: black;
+    border: 5px inset fuchsia;
+    cursor: pointer;
+}
 }
