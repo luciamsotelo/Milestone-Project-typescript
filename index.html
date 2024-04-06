@@ -1,10 +1,8 @@
-<!-- index.html folder -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Play the Memory Game - a fun and challenging game to test your memory skills. Match colors and win!">
     <meta name="keywords" content="Memory Game, Colors, Matching Game, Memory Skills, Fun Game">
     <meta name="author" content="Your Name">
@@ -16,30 +14,34 @@
     <meta property="og:url" content="your_website_url">
 
     <title>Memory Game</title>
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="styles/index.css">
     <script src="index.js" defer></script>
-    <!-- <script src="assets/images"></script> -->
 </head>
 <body>
     <h1>Memory Game</h1>
 
-    <!-- have a message saying you made it. set the div visibility to false-->
-    <div id="message" hidden><p>"Congratulations You Did It"!<br>Click Start Game Button to Play Again!</p></div>
-    <h3>Match the Colors and Win!</h3>
-    <div class="gameInfo">
-        <h2>Moves: <span id="attempts">0</span></h2>
-        <h2>Time:<span id="timer"> 00:00</span></h2>
+    <!-- Message for winning -->
+    <div id="message" hidden>
+        <p>Congratulations! You Did It!<br>Click "Start Game" Button to Play Again!</p>
     </div>
 
+    <h3>Match the Colors and Win!</h3>
+
+    <!-- Game information -->
+    <div class="gameInfo">
+        <h2>Moves: <span id="attempts">0</span></h2>
+        <h2>Time: <span id="timer">00:00</span></h2>
+    </div>
+
+    <!-- Game board -->
     <div class="stats">
         <div class="cards"></div>
         <div class="gameBoard"></div>
     </div>
     
+    <!-- Button to start the game -->
     <button id="startButton">Start Game</button>
-    <!-- <button class="transform">Ready to</button> -->
-
-    
 </body>
 </html>
+
 

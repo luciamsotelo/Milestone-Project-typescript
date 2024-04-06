@@ -1,0 +1,83 @@
+// Variables
+$primary-color: blue;
+$secondary-color: yellow;
+$background-image-mobile: "https://i.pinimg.com/736x/e3/fe/68/e3fe68d244b849fac707dea3d93f1450.jpg";
+$background-image-desktop: "https://cdn.openart.ai/stable_diffusion/ac851073ca1d6f01982908d343026417eb2bc8a9_2000x2000.webp";
+$background-image-large-desktop: "https://i.pinimg.com/736x/69/68/1e/69681ef4639fa37d34c05f824a597cb3.jpg";
+
+// Mixins
+@mixin text-shadow($color) {
+  text-shadow: 5px 5px 6px $color;
+}
+
+// Functions
+@function calculate-border($size) {
+  @return $size / 2;
+}
+
+// Nested selectors
+body {
+  background: url($background-image-mobile) no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+  text-align: center;
+  color: black;
+}
+
+h1 {
+  color: $primary-color;
+  font-size: 4em;
+  margin: 15px auto;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+// Button styling
+button {
+  margin: 10px 1px 1px 10px;
+  height: 70px;
+  width: 120px;
+  background: fuchsia;
+  border: 10px groove black;
+  color: limegreen;
+  cursor: pointer;
+  font-size: 1.2em;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+
+  &:hover {
+    height: 85px;
+    width: 150px;
+    background-color: limegreen;
+    border: 8px solid black;
+    color: fuchsia;
+    transition: 1s;
+    margin-bottom: 50px;
+  }
+}
+
+// More styles...
+
+// Media queries
+@media (min-width: 360px) and (min-height: 720px) {
+  body {
+    background: url($background-image-mobile) no-repeat;
+  }
+  
+  h1 {
+    color: yellow;
+    @include text-shadow(black);
+    font-size: 3em;
+    margin: 5px auto;
+  }
+  
+  // More styles...
+}
+
+@media (min-width: 1024px) {
+  body {
+    background: url($background-image-large-desktop) repeat;
+    background-size: cover;
+  }
+  
+  // Additional styles for larger screens...
+}
